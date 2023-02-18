@@ -3,10 +3,12 @@
 #include <time.h>
 
 /**
- * Description: print if the number is positive, negative or 0
+ * Description: prints if the number is positive, negative or 0
  * main - Entry point
- * RETURN: Always 0
+ * Return: Always 0
  */
+
+
 int main(void)
 {
 	int n;
