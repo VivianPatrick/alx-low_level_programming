@@ -6,11 +6,11 @@
  */
 void print_numbers(void)
 {
-	int x;
+	int ch;
 
-	for (x = 48; x < 58; x++)
+	for (ch = 48; ch < 58; ch++)
 	{
-		_putchar(x);
+		_putchar(ch);
 	}
 	_putchar('\n');
 }
