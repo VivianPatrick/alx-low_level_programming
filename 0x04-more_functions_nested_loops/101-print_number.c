@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * Pprint_number - prints an integer
+ * print_number - prints an integer
  * @n: input integer
- * Return: no return void
+ * Return: no  void
  */
 void print_number(int n)
 {
@@ -32,7 +32,7 @@ void print_number(int n)
 	{
 		_putchar(((m / count) % 10) + 48);
 	}
-}
+} please
 
 
 
