@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,20 +8,25 @@
  */
 void print_triangle(int size)
 {
-	int i, j;
+	int a, b, c;
 
-	for (i = 0; i < size; i++)
+	if (size > 0)
 	{
-		for (j = 1; j < size; j++)
+		for (a = 0; a < size; a++)
 		{
-			putchar(' ');
+			for (c = 0; c < size - a - 1; c++)
+			{
+				_putchar(' ');
+			}
+			for (b = 0; b <= a; b++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		for (j--; j < size; j++)
-		{
-			putchar(35);
-		}
-		if (i < (size - 1))
-			putchar('\n');
 	}
-	putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
