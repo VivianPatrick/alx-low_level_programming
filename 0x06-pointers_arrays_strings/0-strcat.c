@@ -21,7 +21,7 @@ char *_strcat(char *destination, char *source)
 	{
 		destination[x] = source[y];
 		x++;
-		y++
+		y++;
 	}
 	destination[x] = '\0';
 	return (destination);
