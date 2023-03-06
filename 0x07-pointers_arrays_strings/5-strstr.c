@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 			haystack++;
 			yneedle++;
 		}
-		if (!*yneele)
+		if (!*yneedle)
 			return (xhaystack);
 		haystack = xhaystack + 1;
 	}
