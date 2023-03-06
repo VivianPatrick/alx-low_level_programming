@@ -15,5 +15,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[x] = b;
 		n--;
 	}
-	returb (s);
+	return (s);
 }
