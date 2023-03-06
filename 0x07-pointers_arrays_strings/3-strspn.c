@@ -4,26 +4,25 @@
  * _strspn - Entry point
  * @s: input
  * @accept: input
- * Return: 0
+ * Return: number of accepted bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int x;
+	unsigned int x, y, bool;
 
-	while (*S)
+	for (x = 0; *(s + x) != '\0'; x++)
 	{
-		for (x = 0; accept[x]; x++)
+		bool = 1;
+		for (y = 0; *(accept + y) != '\0'; y++)
 		{
-			if (*s == accept[x])
+			if (*(s + x) == *(accept + y))
 			{
-				n++;
+				bool = 0;
 				break;
 			}
-			else if (accept[x + 1] == '\0')
-				return (n);
 		}
-		s++;
+		if (bool == 1)
+			break;
 	}
-	return (n);
+	return (x);
 }
